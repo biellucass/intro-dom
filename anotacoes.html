@@ -55,6 +55,14 @@
                 <button id="aumentar"> + Aumentar </button>
             </div>
         </section>
+
+        <section>
+            <h2> Criando elementos </h2>
+            <button id="adicionar-item"> Adicionar Item </button>
+
+            <ul id="lista"></ul>
+            
+        </section>
     </main>
 
     <footer>
@@ -93,6 +101,22 @@
         btnDiminuir.addEventListener("click", ()=>{
             num--;
             contador.textContent = num;
+        });
+
+        //Criando elementos 
+
+        const lista = document.querySelector("#lista");
+        const btnAdicionar = document.getElementById("adicionar-item");
+
+        btnAdicionar.addEventListener("click", ()=>{
+            // 1 - Cria elemento
+            const item = document.createElement("li");
+
+            // 2 - Atualiza elemento com o conteúdo
+            item.textContent = "Estudar Eventos do JavaScript";
+
+            // 3 Anexa/insere/adicionar item a lista
+            lista.appendChild(item);
         });
 
     </script>
