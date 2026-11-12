@@ -45,6 +45,16 @@
                 <li> <strong>Modificar atributos</strong>: Alterar um src, um aria-label e etc.</li>
             </ul>
         </section>
+
+        <section>
+            <h2> Exemplo com contador </h2>
+
+            <div class="container-contador">
+                <p id="contador"> 0 </p>
+                <button id="diminuir"> - Diminuir </button>
+                <button id="aumentar"> + Aumentar </button>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -66,6 +76,24 @@
         sections.forEach(function (section){
             section.style.backgroundColor = "violet";
         })
+
+        //Exemplo de contador
+        const contador = document.getElementById("contador");
+        const btnAumentar = document.querySelector("#aumentar");
+        const btnDiminuir = document.querySelector("#diminuir");
+
+        let num = 0;
+
+        
+        btnAumentar.addEventListener("click", function(){
+            num++;
+            contador.textContent = num;
+        });
+
+        btnDiminuir.addEventListener("click", ()=>{
+            num--;
+            contador.textContent = num;
+        });
 
     </script>
     
