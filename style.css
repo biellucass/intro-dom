@@ -53,6 +53,10 @@ figure img {
     max-width: 100%;
 }
 
+ul {
+    margin-top: 1rem;
+}
+
 ul li {
     margin-bottom: 0.5rem;
     background-color: #343a40;
@@ -64,4 +68,62 @@ ul li {
 footer {
     background-color: #343a40;
     color: white;
+    text-align: center;
+    padding: 1rem;
 }
+
+.container-contador{
+    background-color: #e9e9e9;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.container-contador p{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.criar-elementos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+}
+
+form input {
+    height: 3rem;
+    border-radius: 2rem;
+    border: none;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+button{
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+.container-contador button:nth-last-child(2), #adicionar-item{
+    background-color: black;
+    color: #e9e9e9;
+}
+
+
+
