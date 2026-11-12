@@ -12,7 +12,7 @@
 <body>
 
     <header>
-        <h1> Conhecendo a DOM </h1>
+        <h1 id="titulo-principal"> Conhecendo a DOM </h1>
     </header>
 
     <main>
@@ -50,6 +50,24 @@
     <footer>
         <p> &copy; Todos os direitos reservados - Gabriel Lucas </p>
     </footer>
+
+    <script>      
+        const tituloPrincipal = document.getElementById("titulo-principal");
+
+        tituloPrincipal.textContent = "Aprendendo javascript";
+
+        tituloPrincipal.innerHTML = "<em> Oláaaa </em>";
+
+        tituloPrincipal.style.color = "red";
+        tituloPrincipal.style.backgroundColor = "blue";
+
+        // Capturando mais de um elemento
+        const sections = document.querySelectorAll("section");
+        sections.forEach(function (section){
+            section.style.backgroundColor = "violet";
+        })
+
+    </script>
     
 
 </body>
