@@ -136,7 +136,14 @@
             event.preventDefault();
 
             // 3 - Capturando o valor digitado pelo usuário
-            const tarefa = inputTarefa.value;
+            const tarefa = inputTarefa.value.trim();
+
+            if (tarefa === ""){
+                alert("Digite uma tarefa!");
+                inputTarefa.value = "";
+                inputTarefa.focus();
+                return;
+            };
 
             // 4 - Criando um novo elemento li
             const itemLista = document.createElement("li");
@@ -146,6 +153,12 @@
 
             // 6 - Adicionando o LI dentro da UL
             lista.appendChild(itemLista);
+
+            // 7 - Limpando o input
+            inputTarefa.value = "";
+
+            // 8 - Devolvendo o foco para o input
+
 
         });
 
