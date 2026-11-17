@@ -6,5 +6,7 @@ const listaMenu = document.getElementById("menu");
 botaoMenu.addEventListener("click", function(){
     //lógica a ser desenvolvida
 
+    listaMenu.classList.toggle("ativo");
+
 })
 
