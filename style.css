@@ -88,9 +88,29 @@ nav button{
     transform: translateY(0);
 }
 
+.menu a{
+    display: block;
+    color: var(--color-creme);
+    font-weight: 500;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.menu a:hover{
+    background-color: var(--color-blue);
+}
+
 @media screen and (min-width: 48rem){
     .menu{
-        display: block;
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        padding: 0;
+        pointer-events: auto;
+        transform: none;
+
+        flex-direction: row;
+        width: auto;
     }
 
     nav button{
