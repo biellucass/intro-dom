@@ -1,37 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title> Explorando a DOM </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Explorando a DOM</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <a href="" class="logo"> Logo </a>
+      <nav>
+        <a href="" class="logo"> Logo </a>
 
-            <button type="button" id="menu-toggle" aria-label="abrir Menu" aria-expanded="false" aria-controls="menu">
-                <!-- Icone svg aqui -->
-                 <svg width="54" height="54" viewBox= "0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M21 5.5H3V7h18V5.5Zm0 5.75H3v1.5h18v-1.5ZM3 17h18v1.5H3V17Z" fill="currentColor"/></svg>
-            </button>
+        <button
+          type="button"
+          id="menu-toggle"
+          aria-label="abrir Menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          <!-- Icone svg aqui -->
+          <svg
+            width="54"
+            height="54"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M21 5.5H3V7h18V5.5Zm0 5.75H3v1.5h18v-1.5ZM3 17h18v1.5H3V17Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
 
-            <ul id="menu" class="menu">
-                <li> <a href="#inicio"> ínicio </a> </li>
-                <li> <a href="#sobre"> Sobre </a> </li>
-                <li> <a href="#servicos"> Serviços </a> </li>
-                <li> <a href="#contato"> Contato </a> </li>
-
-            </ul>
-        </nav>
+        <ul id="menu" class="menu">
+          <li><a href="#inicio"> ínicio </a></li>
+          <li><a href="#sobre"> Sobre </a></li>
+          <li><a href="#servicos"> Serviços </a></li>
+          <li><a href="#contato"> Contato </a></li>
+        </ul>
+      </nav>
     </header>
 
-    <script src="menu-hamburguer.js"></script>
-</body>
+    <!-- Modal -->
+    <dialog id="modal-inscricao" class="modal">
+      <button type="button" class="modal-fechar" aria-label="Fechar modal">
+        x
+      </button>
 
+      <div class="modal-conteudo">
+        <span> NEWSLETTER </span>
+
+        <h2>Fique por dentro</h2>
+        <p>
+          Inscreva-se para receber novidades, conteúdos e dicas diretamente no
+          seu email.
+        </p>
+
+        <form id="form-inscricao">
+          <div>
+            <label for="nome"> Seu nome: </label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Ex: Ana"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email"> Seu email: </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Ex: meail@email.com"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email"> Seu email: </label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Ex: meail@email.com"
+              required
+            />
+          </div>
+
+          <button type="submit" class="modal-submit"> Quero me inscrever </button>
+        </form>
+
+        <span class="modal-rodape">
+            Sem span. Cancele quando quiser!
+        </span>
+      </div>
+    </dialog>
+
+
+
+    <script src="menu-hamburguer.js"></script>
+  </body>
 </html>
