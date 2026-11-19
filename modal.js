@@ -2,11 +2,15 @@
 const modal = document.querySelector("#modal-inscricao");
 const btnModal = document.querySelector("#modal-fechar");
 
+window.addEventListener("load", function(){
+    setTimeout(function(){
+        modal.showModal();
+    }, 6000);
+});
+
 btnModal.addEventListener("click", function(){
     modal.close();
 });
-
-modal.showModal();
 
 modal.addEventListener("click", function(event){
     //target = alvo do evento
