@@ -116,7 +116,7 @@ nav button{
 }
 
 .modal::backdrop{
-    background-color: #2626ed;
+    background-color: #4f4f52;
     backdrop-filter: blur(0.75rem);
 }
 
