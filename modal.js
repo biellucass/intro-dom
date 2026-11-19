@@ -7,3 +7,10 @@ btnModal.addEventListener("click", function(){
 });
 
 modal.showModal();
+
+modal.addEventListener("click", function(event){
+    //target = alvo do evento
+    if(event.target === modal) {
+        modal.close();
+    }
+});
