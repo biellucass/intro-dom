@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <nav>
         <a href="" class="logo"> Logo </a>
 
@@ -51,6 +51,48 @@
         </ul>
       </nav>
     </header>
+
+    <main id="conteudo-principal">
+      <section class="noticias" aria-labelledby="titulo-noticias">
+        
+        <header class="noticias-header">
+          <span class="noticias-tag"> Informações em tempo real </span>
+          <h1 id="titulo-noticias"> últimas notícias </h1>
+          <p> Confira as príncipais notíciais do Brasil do mundo! </p>
+        </header>
+
+        <ul id="lista-noticias" class="lista-noticias" aria-label="Lista de notícias">
+          <li>
+            Carregando notícias...
+          </li>
+
+          <li>
+            <article class="card-noticia">
+              <img src="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/example-dom-tree.svg"
+              alt="representação do document object model">
+
+              <div>
+                <span> UOL </span>
+                <h2> Título da notícia </h2>
+                <p> Descrição da notícia </p>
+                <span> 19/11/2026 </span>
+
+                <a href="#"> Ler notícias</a>
+              </div>
+            </article>
+          </li>
+
+          <li>
+            <article></article>
+          </li>
+
+          <li>
+            <article></article>
+          </li>
+        </ul>
+
+      </section>
+    </main>
 
     <!-- Modal -->
     <dialog id="modal-inscricao" class="modal">
