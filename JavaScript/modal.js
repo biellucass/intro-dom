@@ -5,7 +5,7 @@ const btnModal = document.querySelector("#modal-fechar");
 window.addEventListener("load", function(){
     setTimeout(function(){
         modal.showModal();
-    }, 6000);
+    }, 6000000);
 });
 
 btnModal.addEventListener("click", function(){
