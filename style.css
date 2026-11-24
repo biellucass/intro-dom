@@ -27,7 +27,8 @@ body{
     background-color: var(--color-dark);
     padding: 1rem 0.5rem;
     border-bottom: 0.125rem solid var(--color-blue);
-    position: fixed;
+    position: sticky;
+    top: 0;
 }
 
 
@@ -125,7 +126,7 @@ nav button{
 
 .lista-noticias{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(15.625rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(19.625rem, 1fr));
     gap: 1rem;
 }
 
@@ -205,7 +206,13 @@ nav button{
     margin-bottom: 0.75rem;
 }
 
-
+/* footer */
+footer{
+    background-color: var(--color-dark);
+    color: var(--color-creme);
+    padding: 2rem 1rem;
+    text-align: center;
+}
 
 
 /* modal */
