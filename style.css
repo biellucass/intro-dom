@@ -27,7 +27,7 @@ body{
     background-color: var(--color-dark);
     padding: 1rem 0.5rem;
     border-bottom: 0.125rem solid var(--color-blue);
-    position: sticky;
+    position: fixed;
 }
 
 
