@@ -27,7 +27,9 @@ body{
     background-color: var(--color-dark);
     padding: 1rem 0.5rem;
     border-bottom: 0.125rem solid var(--color-blue);
+    position: sticky;
 }
+
 
 nav {
     max-width: 75rem;
@@ -151,6 +153,7 @@ nav button{
     display: flex;
     flex-direction: column;
     padding: 1.25rem;
+    flex: 1;
 }
 
 .card-noticia h2{
@@ -298,6 +301,7 @@ nav button{
     display: flex;
     flex-direction: column;
     gap: 0.85rem;
+    height: 100%;
 }
 .form-inscricao label {
     font-size: 0.85rem;
